@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+}
+#cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+  align-items: center;
+  height: 90vh;
+  max-width: 800px;
+  max-height: 800px;
+  padding: 20px;
+  margin: auto;
+}
+
+#cardContainer.unclickable {
+  pointer-events: none;
+}
+
+.block {
+  display: flex;
+  width: 18%;
+  height: 18%;
+  border: 3px solid darkgrey;
+  margin: 5px;
+  border-radius: 11%;
+}
+
+.block p {
+  margin: auto;
+}
+
+.block.hidden p {
+  display: none;
+}
+
+.block.hidden {
+  background-color: lightgray;
+}
+
+.block:not(.hidden) {
+  pointer-events: none;
+}
+
+.counter {
+  pointer-events: none;
+}
